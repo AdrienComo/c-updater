@@ -8,7 +8,7 @@ all: $(O) $(B) $(B)/main
 
 
 $(B)/main:  
-	g++ $(CFLAGS) $(LIBS) $(S)/main.cpp $(PYTHON_FLAGS) -o $(B)/main && clear
+	g++ $(S)/main.cpp $(PYTHON_FLAGS) -o $(B)/main && clear
 	
 $(O):
 	mkdir $(O)
